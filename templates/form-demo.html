@@ -1,18 +1,7 @@
-<!DOCTYPE html>
+{% extends "home-base.html"%}
+{% block title %}Form Demo{% endblock %}
+{% block page_content%}
 
-  {% extends "home-base.html" %}
-
-  {% block head %}
-  {{super()}}
-
-  {% endblock %}
-
-  {% block title%}
-  Homepage
-  {% endblock %}
-
-
-  {% block page_content%}
   <div class="container">
     <!-- simple html form w/o Bootstrap using GET -->
     <h1>Hello,
@@ -40,4 +29,5 @@
     </form>
 
   </div>
-  {% endblock %}
+
+{% endblock%}
